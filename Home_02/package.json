@@ -1,0 +1,18 @@
+{
+  "name": "portfoliolanding",
+  "version": "1.0.0",
+  "description": "* Скачиваем все из репозитория командой git clone https://github.com/Coder801/PhpAcademyWorkshop.git\r * Заходим в папку с проектом через консоль\r * Выполняем установку node модулей командой npm install в консоли\r * Для сборки проекта выполниет команду gulp в консоли\r   * В браузере автоматически откроется страница с проектом\r   * Так же можно перейти на страницу по адрессу localhost:3001",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "keywords": [],
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1"
+  }
+}
