@@ -5,3 +5,95 @@
   --textColor: rgba(152, 152, 152, 1);
   --headlineColor: var(--secondaryColor);
 }
+body {
+    background-color: #dfdad4;
+}
+.content {
+
+    margin: 100px auto;
+    display: flex;
+    width: 680px;
+    height: 480px;
+    box-shadow:-5px 5px #cfcbc5;
+}
+.login {
+width: 340px;
+
+    background-color: var(--secondaryColor);
+box-shadow:-5px 5px #cfcbc5;
+}
+.register {
+width: 340px;
+    background-color: var(--primaryColor);
+    box-shadow:5px 5px #cfcbc5;
+}
+.register_account{
+font-size: 24px;
+color: var(--secondaryColor);
+text-align: center;
+margin: 30px auto;
+}
+.register_account {
+    margin:10 auto;
+}
+.form input{
+    margin: 15px auto;
+
+}
+input {
+    text-indent: 20px;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--textColor);
+    display: block;
+    height: 45px;
+    width: 260px
+
+}
+.ButtonRegister {
+    all: initial;
+    text-align: center;
+    color: var( --secondaryColor);
+    display: block;
+    background: #4c79ff;
+    border: 0;
+    height: 45px;
+    width: 266px
+}
+.login_img {
+    margin: 38px 0 0 -5px;
+
+    background-image: url(../img/login.png);
+    height: 105px;
+    width: 285px;
+    color: var(--secondaryColor);
+    line-height: 100px;
+    text-align: center;
+    font-size: 24px;
+
+}
+.form_login input{
+    margin: 20px auto;
+
+}
+.ButtonLogin {
+    all: initial;
+    text-align: center;
+    color: var( --secondaryColor);
+    display: block;
+    background: var(--primaryColor);
+    border: 0;
+    height: 45px;
+    width: 266px
+}
+.login_footer {
+    color: var(--textColor);
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+.login_footer a {
+    text-decoration: none;
+
+    color: #3366ff;
+}
