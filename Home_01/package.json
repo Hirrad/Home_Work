@@ -1,5 +1,5 @@
 {
-  "name": "home_02",
+  "name": "home_01",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -11,9 +11,8 @@
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "gulp": "^3.9.1",
-    "gulp-sass": "^4.0.1"
-  },
-  "dependencies": {
-    "gulp-imagemin": "^4.1.0"
+    "gulp-imagemin": "^4.1.0",
+    "gulp-sass": "^4.0.1",
+    "node-normalize-scss": "^3.0.0"
   }
 }

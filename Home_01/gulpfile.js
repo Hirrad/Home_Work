@@ -1,25 +1,33 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass');
-const GulpImagemin = require('gulp-imagemin');
-const BrowserSync = require('browser-sync').create();
+const gulp = require('gulp'); // Сборщик
+const sass = require('gulp-sass'); // Библиотека SASS
+const gulpImagemin = require('gulp-imagemin'); // Библиотека оптимизации изображений
+const browserSync = require('browser-sync').create(); // Библиотека LiveReload
 
+// Задача запуска сервера и отслеживание файлов
+// При каждом изменении в файлах будут запускатся соотвецтвующие задачи
+gulp.task('server', ['sass'], function() {
+    browserSync.init({
+        server: "."
+    });
+    gulp.watch(["./src/scss/*.scss", "./src/scss/**/*.scss"], ['sass']);
+    gulp.watch('./src/img/*', ['img']);
+    gulp.watch("*.html").on('change', browserSync.reload);
+});
 
+// Транскомпиляция SCSS в СSS
+gulp.task('sass', function() {
+  return gulp.src('./src/scss/*.scss') // Берем исходные файлы
+    .pipe(sass({includePaths: require('node-normalize-scss').includePaths})) // Транскомпиляция в CSS
+    .pipe(gulp.dest('./dist/css/')) // Складывает их в папку dist
+    .pipe(browserSync.stream()); // Перезагружаем браузер
+});
 
-gulp.task('sass', function()  {
-    return gulp.src('./src/scss/*')//задаем исходник
-        .pipe(sass())               // Транскомпилируем в css
-        .pipe(gulp.dest('./dest/css/'))// Ложим результат в файл
-})
+// Минификация изображений
+gulp.task('img', function() {
+  return gulp.src('./src/img/*') // Берем исходные файлы
+    .pipe(gulpImagemin()) // Минификация изображений
+    .pipe(gulp.dest('./dist/img/')); // Складывает их в папку dist
+});
 
-gulp.task('img', function()  {
-    return gulp.src('./src/img/*')//задаем исходник
-        .pipe(GulpImagemin())
-        .pipe(gulp.dest('./dest/img/'))// Ложим результат в файл
-})
-
-gulp.task('watch', function(){
-    gulp.watch('./src/scss/*', ['sass'])
-    gulp.watch('./src/img/*', ['img'])
-})
-
-gulp.task('default', ['sass','img','watch'])
+// Gulp задача по умолчанию
+gulp.task('default', ['sass', 'img', 'server']);

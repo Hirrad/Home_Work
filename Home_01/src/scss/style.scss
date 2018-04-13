@@ -1,5 +1,9 @@
-$color: blue;
+// Base
+@import "normalize";
+@import "./base/variables";
 
-h1 {
-    color: $color;
-}
+// Layout
+@import "./layout/header";
+@import "./layout/about";
+
+@import "./blocks/content-box";

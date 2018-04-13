@@ -1,0 +1,44 @@
+// Header
+/* ======================= */
+
+.header {
+  $maxWidth: 550px;
+
+  & {
+    display: flex;//резиновый
+    flex-direction: column;//Главная ось направлена сверху вниз. Элементы расположены в колонку, по умолчанию прижаты к верху (см. justify-content), их нумерация имеет обычный порядок - сверху вниз.
+    align-items: center;//задает выравнивание элементов вдоль поперечной оси.
+    justify-content: center;//определяет, как браузер распределяет пространство между и вокруг элементов контента вдоль главной оси их контейнера.
+    min-height: 100vh;//высота секции равна высоте области просмотра 1hv=1min
+    width: 100%;
+    background-image: url('../img/header__bg.jpg');
+    background-size: cover;//Масштабирует изображение с сохранением пропорций так, чтобы его ширина или высота равнялась ширине или высоте блока.
+  }
+  & > .headline {
+    max-width: $maxWidth;
+    color: $primaryColor;
+    text-align: center;
+    text-transform: uppercase;//Все символы текста становятся прописными (верхний регистр).
+    font-weight: 500;//Устанавливает насыщенность шрифта
+    font-size: 54px;
+    font-family: $primaryFont;
+  }
+
+  & > .text {
+    max-width: $maxWidth;
+    color: $primaryColor;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: $primaryFont;
+    line-height: 30px;//Устанавливает интерлиньяж (межстрочный интервал) текста, отсчет ведется от базовой линии шрифта.
+    margin-bottom: 80px;
+  }
+
+  & > .scroll-down {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
