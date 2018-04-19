@@ -508,7 +508,7 @@ template {
     box-sizing: border-box;
     border: none;
     margin: 30px auto;
-    width: 395px;
+    width-max: 395px;
     height: 60px; }
   .content-box__what_we_do > img {
     box-sizing: border-box;
