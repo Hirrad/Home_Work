@@ -1,0 +1,41 @@
+.portfolio{
+  $SizeMargin : 3px;
+  min-height: 100vh;//высота секции равна высоте области просмотра 1hv=1min
+  width: 100%;
+  font-family: $primaryFont;
+  color: #ffff00;
+
+ margin: auto;
+
+
+  &__box {
+    display: flex;
+    align-items: center;//задает выравнивание элементов вдоль поперечной оси.
+    justify-content: center;//определяет, как браузер распределяет пространство между и вокруг элементов контента вдоль главной оси их контейнера.
+    text-align: center;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+
+    &__01 {
+      background-image: url('../img/service__icon-1.jpg');
+      background-size: cover;
+      flex-grow: 1;
+      margin: $SizeMargin $SizeMargin $SizeMargin 0;
+    }
+    &__02 {
+      background-image: url('../img/service__icon-2.jpg');
+      background-size: cover;
+      flex-grow: 3;
+      margin: $SizeMargin;
+    }
+    &__03 {
+      background-image: url('../img/service__icon-3.jpg');
+      background-size: cover;
+      flex-grow: 1;
+      margin: $SizeMargin 0 $SizeMargin $SizeMargin;
+    }
+  }
+
+}

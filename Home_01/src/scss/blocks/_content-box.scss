@@ -1,54 +1,82 @@
 .content-box {
-  $borderSize: 2px;
+    $borderSize: 2px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 30px 9%;
+    // padding-top: 30px;
+    // padding-right: 15%;
+    // padding-bottom: 30px;
+    // padding-left: 15%;
+    max-width: 900px;
+    border: $borderSize solid $secondaryColor;
+    border-top: none;
 
-  position: relative;//Положение элемента устанавливается относительно его исходного места.
-  box-sizing: border-box;//Свойства width и height включают в себя значения полей и границ, но не отступов (margin).
-  margin: 0 auto;
-  padding-top: 30px;
-  padding-right: 15%;
-  padding-bottom: 30px;
-  padding-left: 15%;
-  max-width: 900px;
-  border: $borderSize solid $secondaryColor;
-  border-top: none;//убирает линию
+    &__title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        width: 100%;
+        color: $secondaryColor;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 34px;
+        font-family: $primaryFont;
+        transform: translateY(-50%);
 
-  &__title {
-    position: absolute;//Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет.
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 100%;
-    color: $secondaryColor;
-    text-align: center;
-    text-transform: uppercase;//Все символы текста становятся прописными (верхний регистр).
-    font-weight: 300;//Устанавливает насыщенность шрифта
-    font-size: 34px;
-    font-family: $primaryFont;
-    transform: translateY(-50%);
+        &:after,
+        &:before {
+            position: absolute;
+            top: 50%;
+            width: 20%;
+            height: $borderSize;
+            background-color: $secondaryColor;
+            content: '';
+            transform: translateY(-50%);
+        }
 
-    &:before, &:after {
-      position: absolute;
-      top: 50%;
-      width: 20%;
-      height: $borderSize;
-      background-color: $secondaryColor;
-      content: '';
-      transform: translateY(-50%);
+        &:before {
+            left: -($borderSize);
+        }
+
+        &:after {
+            right: -($borderSize);
+        }
+        //Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет.//текст выравнивание по центру//Все символы текста становятся прописными (верхний регистр).//Устанавливает насыщенность шрифта//размер шрифта//цвет фона
     }
-    &:before {
-      left: -($borderSize);
+    .what_we_do__title {
+        font-weight: 400;
+        font-size: 20px;
+        text-transform: uppercase;
     }
-    &:after {
-      right: -($borderSize);
+    &__text {
+        color: $secondaryColor;
+        text-align: center;
+        font-size: 16px;
+        font-family: $primaryFont;
+        line-height: 24px; //межстрочный интервал
     }
+  &__button{
+    display: block;
+    background-color: $secondaryColor;
+    color: $primaryColor;
+    box-sizing: border-box;
+    border: none;
+    margin: 30px auto;
+    width: 395px;
+    height: 60px;
   }
+    //Положение элемента устанавливается относительно его исходного места.//Свойства width и height включают в себя значения полей и границ, но не отступов (margin).// выравнивание по цертру//убирает линию
 
-  &__text {
-    color: $secondaryColor;
-    text-align: center;
-    font-size: 16px;
-    font-family: $primaryFont;
-    line-height: 24px;
-  }
+    &__what_we_do {
+        & > img {
+            box-sizing: border-box;
+            display: block;
+            margin: 70px auto 40px auto;
+        }
 
+
+    }
 }
