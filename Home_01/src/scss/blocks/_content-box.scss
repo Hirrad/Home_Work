@@ -11,7 +11,9 @@
     max-width: 900px;
     border: $borderSize solid $secondaryColor;
     border-top: none;
-
+    &--white{// моди, для того что бы в блоке цыет был белый
+      border-color: $primaryColor;
+            }
     &__title {
         position: absolute;
         top: 0;
@@ -25,7 +27,9 @@
         font-size: 34px;
         font-family: $primaryFont;
         transform: translateY(-50%);
-
+      &--white{
+        color: $primaryColor;
+              }
         &:after,
         &:before {
             position: absolute;
@@ -35,28 +39,50 @@
             background-color: $secondaryColor;
             content: '';
             transform: translateY(-50%);
-        }
-
+                  }
         &:before {
             left: -($borderSize);
-        }
+                }
 
         &:after {
             right: -($borderSize);
-        }
-        //Указывает, что элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет.//текст выравнивание по центру//Все символы текста становятся прописными (верхний регистр).//Устанавливает насыщенность шрифта//размер шрифта//цвет фона
+                }
+      &--white{
+        &:after,
+        &:before {
+          background-color: $primaryColor;
+                }
+              }
     }
-    .what_we_do__title {
-        font-weight: 400;
-        font-size: 20px;
-        text-transform: uppercase;
+  &__with-icon{
+    margin-top: 70px;
+    margin-bottom: 30px;
+
+    &--first  {
+      padding-top: 20px;
     }
+  }
+    &__subtitle{
+      color: $secondaryColor;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 20px;
+      font-family: $primaryFont;
+    }
+  &__icon{
+    display: block;
+    text-align: center;
+  }
     &__text {
         color: $secondaryColor;
         text-align: center;
         font-size: 16px;
         font-family: $primaryFont;
         line-height: 24px; //межстрочный интервал
+      &--white{
+        color: $primaryColor;
+      }
     }
   &__button{
     display: block;

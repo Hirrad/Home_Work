@@ -1,0 +1,23 @@
+.our-works{
+  &{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+  }
+&>.figure{
+  margin: 0;
+  position: relative;
+  &>.image{
+    display: block;
+    margin: 0;
+  }
+    &>.description{
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+      color: $primaryColor;
+      font-size:34px ;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+}
+}
