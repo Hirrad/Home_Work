@@ -533,47 +533,44 @@ template {
     width: 40px;
     height: 40px; }
 
-.portfolio {
-  width: 100%;
-  font-family: "Lato", sans-serif;
-  color: #ffff00;
-  margin: auto; }
-  .portfolio__box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 20px;
-    line-height: 24px;
-    text-transform: uppercase; }
-    .portfolio__box__01 {
-      height: 100%;
-      background-image: url("../img/service__icon-1.jpg");
-      background-size: cover;
-      flex-grow: 1;
-      margin: 3px 3px 3px 0; }
-    .portfolio__box__02 {
-      background-image: url("../img/service__icon-2.jpg");
-      background-size: cover;
-      flex-grow: 2;
-      margin: 3px; }
-    .portfolio__box__03 {
-      background-image: url("../img/service__icon-3.jpg");
-      background-size: cover;
-      flex-grow: 1;
-      margin: 3px 0 3px 3px; }
-    .portfolio__box__04 {
-      background-image: url("../img/service__icon-4.jpg");
-      background-size: cover;
-      flex-grow: 1;
-      margin: 3px 3px 3px 0; }
-    .portfolio__box__05 {
-      background-image: url("../img/service__icon-5.jpg");
-      background-size: cover;
-      flex-grow: 2;
-      margin: 3px; }
-    .portfolio__box__06 {
-      background-image: url("../img/service__icon-6.jpg");
-      background-size: cover;
-      flex-grow: 1;
-      margin: 3px 0 3px 3px; }
+.portfolio__box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  line-height: 24px;
+  max-width: 900px;
+  text-transform: uppercase;
+  flex-wrap: wrap; }
+  .portfolio__box__01 {
+    height: 100%;
+    background-image: url("../img/service__icon-1.jpg");
+    background-size: cover;
+    width: 500px;
+    margin: 3px 3px 3px 0; }
+  .portfolio__box__02 {
+    background-image: url("../img/service__icon-2.jpg");
+    background-size: cover;
+    flex-grow: 200px;
+    margin: 3px; }
+  .portfolio__box__03 {
+    background-image: url("../img/service__icon-3.jpg");
+    background-size: cover;
+    flex-grow: 1888px;
+    margin: 3px 0 3px 3px; }
+  .portfolio__box__04 {
+    background-image: url("../img/service__icon-4.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 3px 3px 3px 0; }
+  .portfolio__box__05 {
+    background-image: url("../img/service__icon-5.jpg");
+    background-size: cover;
+    flex-grow: 2;
+    margin: 3px; }
+  .portfolio__box__06 {
+    background-image: url("../img/service__icon-6.jpg");
+    background-size: cover;
+    flex-grow: 1;
+    margin: 3px 0 3px 3px; }
