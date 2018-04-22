@@ -80,22 +80,18 @@
         font-size: 16px;
         font-family: $primaryFont;
         line-height: 24px; //межстрочный интервал
+
+
       &--white{
         color: $primaryColor;
       }
     }
-  &__button{
-    display: block;
-    background-color: $secondaryColor;
-    color: $primaryColor;
-    box-sizing: border-box;
-    border: none;
-    margin: 30px auto;
-    width: 395px;
-    height: 60px;
-  }
-    //Положение элемента устанавливается относительно его исходного места.//Свойства width и height включают в себя значения полей и границ, но не отступов (margin).// выравнивание по цертру//убирает линию
 
+    //Положение элемента устанавливается относительно его исходного места.//Свойства width и height включают в себя значения полей и границ, но не отступов (margin).// выравнивание по цертру//убирает линию
+  &__button{
+    text-align: center;
+    padding-top: 20px;
+              }
     &__what_we_do {
         & > img {
             box-sizing: border-box;

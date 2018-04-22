@@ -1,0 +1,30 @@
+.button{
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  text-transform: uppercase;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-width: 396px;
+  padding: 15px 20px;
+  font-family: $primaryFont;
+  font-style: 16px;
+  border: none;
+  display:inline-block;
+  text-overflow: ellipsis;//если что то не влазит то постаить ... и обрезать
+  overflow: hidden;//сркь все что не входить в блок
+  white-space: nowrap;// не переносить на новую строку
+  max-width:100% ;
+  border:2px solid $secondaryColor;
+
+  &:hover{
+    background-color: $primaryColor;
+    color: $secondaryColor;
+    transition: all 1000ms ease;//переход медиа all -что все елементы 300ms сколько длится
+  }
+  //display: block;
+  //box-sizing: border-box;
+  //margin: 30px auto;
+  //width: 395px;
+  //height: 60px;
+}
