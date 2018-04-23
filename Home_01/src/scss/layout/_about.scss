@@ -1,7 +1,14 @@
 .about {
-  display: flex;//резировый
-  align-items: center;//задает выравнивание элементов вдоль поперечной оси.
-  justify-content: center;//определяет, как браузер распределяет пространство между и вокруг элементов контента вдоль главной оси их контейнера.
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding-top: 150px;
   padding-bottom: 150px;
+
+  @include tablet {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }

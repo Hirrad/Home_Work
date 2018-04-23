@@ -1,11 +1,8 @@
-//Service
+// Service
+
 .service {
-   background-image: url('../img/service__bg.jpg');
-  -webkit-background-size: cover;
-  background-size: cover;
   padding-top: 150px;
-  padding-bottom: 150px;
-}
-.service > .content-box__title {
-    color: #595e79;
+  padding-bottom: 100px;
+  background-image: url('../img/service__bg.jpg');
+  background-size: cover;
 }
