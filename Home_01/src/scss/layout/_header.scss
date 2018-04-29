@@ -12,7 +12,7 @@
     min-height: 100vh;
     width: 100%;
     background-image: url('../img/header__bg.jpg');
-    background-size: cover;
+    background-size: cover;// занимает весь размер блока по пропорции, если что то не влазит обрезает
     background-position: center;
   }
   & > .headline {
@@ -57,7 +57,7 @@
 
     animation-name: scrollDown;
     animation-duration: 7s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite;//безконечная анимация
     animation-timing-function: ease;
   }
 
