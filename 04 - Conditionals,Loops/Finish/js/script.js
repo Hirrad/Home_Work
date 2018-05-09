@@ -6,27 +6,18 @@ console.clear();
 // // Длинна номера не должна быть не меньше 9 и не больше 11
 //
 // // * Your code Start *
-var numberPhone= prompt('Enter phone number:');
-verifyTheUsersPhoneNumber(numberPhone);
-function verifyTheUsersPhoneNumber(numberPhone) {
-    if (9<= numberPhone.length  && numberPhone.length <=11 && isNaN(numberPhone)===false){
-     alert ('You phone: ' + numberPhone);
-
-
-
-    }
-    else {
-        alert ('You entered an invalid number. Your phone should consist of numbers and be at least 9 and not more than 11.');
-        numberPhone= prompt('Enter phone number');
-        return verifyTheUsersPhoneNumber(numberPhone);
-    }
-}
-
-
-
-
-
-
+// var numberPhone= prompt('Enter phone number:');
+// verifyTheUsersPhoneNumber(numberPhone);
+// function verifyTheUsersPhoneNumber(numberPhone) {
+//     if (9<= numberPhone.length  && numberPhone.length <=11 && isNaN(numberPhone)===false){
+//      alert ('You phone: ' + numberPhone);
+//     }
+//     else {
+//         alert ('You entered an invalid number. Your phone should consist of numbers and be at least 9 and not more than 11.');
+//         numberPhone= prompt('Enter phone number');
+//         return verifyTheUsersPhoneNumber(numberPhone);
+//     }
+// }
 // // * Your code End *
 //
 //
@@ -42,12 +33,6 @@ function verifyTheUsersPhoneNumber(numberPhone) {
 //
 // var objectB = {};
 //
-// // * Your code Start *
-//
-//
-//
-// // * Your code End *
-//
 // // Переопределяем значения обьекта objectA
 // objectA.name = 'Chris';
 // objectA.name = 'Couer';
@@ -58,8 +43,28 @@ function verifyTheUsersPhoneNumber(numberPhone) {
 // console.log(objectB.name); // John
 // console.log(objectB.lastname); // Dou
 // console.log(objectB.age); // 50
+
+// * Your code Start *
+// var objectA = {
+//   name: 'John',
+//   lastname: 'Dou',
+//   age: 50
+// }
+// var objectB = {};
+// for(key in objectA){
+//     objectB[key]=objectA[key];
+//     objectB[key]=objectA[key];
+//     objectB[key]=objectA[key];
+// }
+// objectA.name = 'Chris';
+// objectA.name = 'Couer';
+// objectA.name = '45';
 //
-//
+// console.log(objectB.name); // John
+// console.log(objectB.lastname); // Dou
+// console.log(objectB.age); // 50
+// // * Your code End *
+
 // // ## 2 Ветвление
 // // При помощи конструкци switch/case выведете текущую дату
 // // Название месяца должно иметь вид строки
