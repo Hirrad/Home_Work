@@ -74,15 +74,34 @@ console.clear();
 // var day = date.getDate(); // Текущий день
 // var month = date.getMonth(); // Текущий месяц (от 0 до 11)
 // var year = date.getFullYear(); // Текущий год
+// var monthArrey = ['Января','Февраля','Марта','Апреля','Мая','Июня','Июля','Августа','Сентября','Октября','Ноября','Декабря'];
 // var monthName = ''; // Переменная для значения
 //
 // // * Your code Start *
+// var i=0;
+// while (i<= 11){
 //
+//     console.log('case month='+i+':    monthName=monthArrey['+i+'];    break;');
+//     i++;
+// }
+// switch (month) {
+//     case month=0:    monthName=monthArrey[0];    break;
+//     case month=1:    monthName=monthArrey[1];    break;
+//     case month=2:    monthName=monthArrey[2];    break;
+//     case month=3:    monthName=monthArrey[3];    break;
+//     case month=4:    monthName=monthArrey[4];    break;
+//     case month=5:    monthName=monthArrey[5];    break;
+//     case month=6:    monthName=monthArrey[6];    break;
+//     case month=7:    monthName=monthArrey[7];    break;
+//     case month=8:    monthName=monthArrey[8];    break;
+//     case month=9:    monthName=monthArrey[9];    break;
+//     case month=10:    monthName=monthArrey[10];    break;
+//     case month=11:    monthName=monthArrey[11];    break;
 //
-//
+// }
 // // * Your code End *
 //
-// console.log(`Today is: ${day} ${monthName} ${year}`) // Пример: 14 Июня 2017
+// console.log(`Today is: ${day} ${monthName} ${year} года`) // Пример: 14 Июня 2017
 //
 //
 //
