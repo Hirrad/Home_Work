@@ -1,5 +1,5 @@
-"use srtict"
-console.clear();
+// "use strict"
+// console.clear();
 //
 // // ## 0 Работа с функциями
 // //
